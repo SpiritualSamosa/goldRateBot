@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: gold-rate-bot
+    env: python
+    schedule: '50 4 * * *' # 10:20 AM IST
+    buildCommand: ''
+    startCommand: 'python main.py'
